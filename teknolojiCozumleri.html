@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- MyStyle -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>PLT Teknoloji</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+         :root {
+            --dark-color: #303e48;
+            --light-color: #435461;
+            --red-color: #025DAA;
+            --grey-background-color: #E3E6E7;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Rubik", sans-serif;
+            border: 0;
+            outline: 0;
+        }
+        
+        .opacity-30 {
+            opacity: 0.7 !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: var(--grey-background-color)">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light pb-0">
+        <div class="container">
+            <a class="navbar-brand pb-3" href="index.html">
+                <img height="74px" src="lOGO/logo_mavi.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div style="position: absolute; top: 5px; right: 0;">
+                    <i style="color: var(--red-color);" class="fa-solid fa-play"></i>
+                    <div class="navbar-top">
+                        <a href="#!">Basında Biz &nbsp; | &nbsp;</a>
+                        <a href="#!">TR &nbsp; |</a>
+                        <a style="padding-right: 60px;" href="#!">Eng</a>
+                    </div>
+                </div>
+                <div style="width: 40%; height: 1px; background-color: #fff; position: absolute; top: 35px; right: 0;"></div>
+
+                <ul class="navbar-nav mx-auto mt-4 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kurumsal.html">Kurumsal</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="temsilciler.html">Temsilcilikler</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cozumler.html">Çözümler</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urunlerimiz.html">Ürünlerimiz</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kalite.html">Kalite</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br><br>
+
+    <div class="container-fluid bread-crumb">
+        <div class="container">
+            <div class="row">
+                <div class="col p-0 d-lg-flex justify-content-between align-items-center py-2 py-lg-3">
+                    <span>Teknoloji Çözümleri</span>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol style="margin: 0;" class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house"></i> &nbsp; Anasayfa</a></li>
+                            <li class="breadcrumb-item"><a href="cozumler.html">Çözümler</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Teknoloji Çözümleri</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .tarayici-cozumleri {
+            max-width: 1200px !important;
+        }
+        
+        .tarayici-cozumleri .urun-card {
+            padding: 30px;
+            background-color: #fff;
+            font-family: "Titillium Web", sans-serif;
+            color: #1E1E1E;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .tarayici-cozumleri h4 {
+            color: #000;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .tarayici-cozumleri .div {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            max-width: 100%;
+            height: 2px;
+            background-color: rgb(111, 166, 212);
+        }
+        
+        .tarayici-cozumleri ul {
+            list-style: none;
+            margin-top: 10px;
+            margin-bottom: 1.3em;
+            padding: 0;
+        }
+        
+        .tarayici-cozumleri ul li {
+            padding: 7px 0 7px 0;
+            border-bottom: 1px;
+            border-bottom: 1px solid #ececec;
+        }
+        
+        .tarayici-cozumleri ul li i {
+            color: #82A263;
+            font-weight: bold;
+        }
+        
+        .tarayici-cozumleri .btn {
+            border-radius: 5px;
+            background-color: #36a9e1;
+            width: 100% !important;
+            display: block !important;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3 s ease;
+        }
+        
+        .tarayici-cozumleri .btn:hover {
+            background-color: var(--red-color);
+        }
+        
+        .tarayici-cozumleri .title {
+            min-height: 300px;
+        }
+        
+        .item-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .tarayici-cozumleri a {
+            text-decoration: none;
+        }
+    </style>
+
+    <div class="container tarayici-cozumleri mb-5">
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <h3>TEKNOLOJİ ÇÖZÜMLERİ</h3>
+                <p style="color: #1E1E1E">Uzmanlığımızı sizin için kullanıyoruz!</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <div class="title">
+                            <h4>PROFESYONEL HİZMETLER</h4>
+                            <p>BT altyapısından uygulama seviyesine kadar olan döngüde, çeşitli uzmanlıkları entegre ederek uçtan uca danışmanlık hizmetleri sunuyoruz</p>
+                        </div>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Ağ</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Güvenlik</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Voice & Video Uygulamaları</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Cloud Sistemleri</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Telekomünikasyon Servisleri</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <h4>100+ proje</h4>
+                        <p>100’ün üzerinde büyük projede ağ, güvenlik, voice, cloud sistemleri, veri merkezleri ve depolama sistemleri üzerine çözümler sağladık.</p>
+                        <a class="btn" href="#!">PROFESYONEL HİZMETLER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <div class="title">
+                            <h4>AĞ GÜVENLİĞİ YÖNETİM VE DANIŞMANLIK SERVİSLERİ</h4>
+                            <p>Sertifikalı ve konusunda uzman çalışanlarımızla, gelişmiş ağ güvenliği çözümleri yönetim ve bakım hizmetlerini sunuyor, danışmanlığını sağlıyoruz.</p>
+                        </div>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 3 Senior NS Specialist</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 2 NS Specialist</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 5 NS Jnr Specialist</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <h4>YETKİNLİK & SERTİFİKALAR</h4>
+                        <p>Şirketlerin profesyonel, verimli ve esnek BT yönetim ihtiyaçlarına çözümler üretiyoruz</p>
+                        <a class="btn" href="#!">AĞ GÜVENLİĞİ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <div class="title">
+                            <h4>KURUMSAL ÇÖZÜMLER</h4>
+                            <p>Proje öncesinde ve süresince teknik ekiplerimizi koordine ediyor, müşterilerimize uçtan uca destek veriyoruz.</p>
+                        </div>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Entegrasyon</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Yazılım projelerinin entegrasyonu</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Maliyet</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Zaman</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Kalite</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Proje ekibi yönetimi</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <h4>PLT ÇÖZÜM VE PROGRAM YÖNETİMİ</h4>
+                        <p>Teknolojik altyapı ve saha çözümlerinden, profesyonel ve yönetilen hizmetler uygulamalarına kadar sektörden bağımsız, özel ve dikey çözümlere kadar geniş bir ürün yelpazesi ile PLT çözümlerini size sunar.</p>
+                        <a class="btn" href="#!">KURUMSAL ÇÖZÜMLER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <div class="title">
+                            <h4>YÖNETİLEN HİZMETLER</h4>
+                            <p>Bilinen BT dış kaynak kullanımından farklı olarak, değişen ve dijitalleşen dünyanın teknoloji yönetiminde önemli bir rol oynamakla beraber optimum verimliliği hedefleyen şirketler için maliyet avantajları sağlayarak, ihtiyaçlarını
+                                karşılamak için çözümler geliştiriyoruz</p>
+                        </div>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Servis kalitesinin artırılması</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Performans ve verimliliğin artırılması</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; BT maliyetlerinin azaltılması</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Uzman teknik servis ve çözüm noktası</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Servis risklerin azaltılması</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; İş sürekliliğin desteklenmesi</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <h4>NEDEN PLT YÖNETİLEN HİZMETLER?</h4>
+                        <p>Şirketlerin profesyonel, verimli ve esnek BT yönetim ihtiyaçlarına çözümler üretiyoruz</p>
+                        <a class="btn" href="#!">YÖNETİLEN HİZMETLER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <div class="title">
+                            <h4>GERİ DÖNÜŞÜM & İKİNCİ EL ÜRÜN HİZMETLERİ</h4>
+                            <p>Gelin yaşam alanlarımızın temizliğini ve doğallığını garanti altına alalım. Geri dönüşüm ve ikinci el ürün hizmetleri BT ürünlerinizin geri dönüştürülmek veya yeniden pazarlanmak için toplanması envanterinin oluşturulması,
+                                nakledilmesi, sınıflandırılması ve işlenmesi işlemlerini kapsar.</p>
+                        </div>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper" style="font-size: 14px;">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; İkinci el ürünlerinizi değerlendirebilirsiniz.</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; İkinci el ürünleri temin edebilirsiniz.</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Elektronik atıklarınızı doğaya geri kazandırabilirsiniz.</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Doğal kaynaklarımız korunur.</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Enerji tasarrufu sağlanır.</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Atık miktarı azalır</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Ekonomiye katkı sağlanır.</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Çevrenin korunmasına katkıda bulunulur.</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Doğal denge korunur.</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <p>Elektronik atıklarınızı ve ikinci el ürünlerinizi değerlendirmek için; <a href="#!">geridonusum@plt.net.tr</a> adresine e-posta göndererek detaylı bilgi edinebilir ya da destek hattı numaramızdan bizlere ulaşabilirsiniz.</p>
+                        <a class="btn" href="#!">GERİ DÖNÜŞÜM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card" style="padding: 25px;">
+                    <div class="w-100">
+                        <div class="title">
+                            <h4>MİCROSOFT İŞ ÇÖZÜMLERİ DANIŞMANLIK HİZMETLERİ</h4>
+                            <p>Microsoft’un Gold Partner’ı PLT Teknoloji Hizmetleri olarak 1998 yılından bu yana müşterilerimize tüm lisanslama modellerinde çözüm üretiyoruz. Microsoft Lisanslarının satışının yanı sıra, satış öncesi projelendirme, lisanslama
+                                çalışmaları, satış sonrası destek ve kurulum noktasında da hizmet vermekteyiz.</p>
+                        </div>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Microsoft Yazılım Envanter Yönetimi(SAM)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Microsoft İşletim Sistemleri</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Active Directory Dizayn ve Kurulumu</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Microsoft Mesajlaşma Ürünleri</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Veri Tabanı Entegrasyonu</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Microsoft Ürünleri Yükseltme ve Geçiş Projeleri</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Microsoft Hyper-V</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; BT Altyapı ve Sistem Yönetim Yazılımları</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <p>Microsoft’un Microsoft ürünleri ile ilgili tüm lisanslama modelleri için çözüm üretebiliyoruz. <br><br> Lisans danışmanlarımız sizin için en uygun modeli belirleyecek ve teklif olarak size sunacaktır.</p>
+                        <a class="btn" href="#!">MİCROSOFT İŞ ÇÖZÜMLERİ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-top">
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="kurumsal.html">Kurumsal</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="temsilciler.html">Temsilcilikler</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="cozumler.html">Çözümler</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="kalite.html">Kalite</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row pt-4 pb-3">
+                <div class="col-lg-3 col-xl-3 my-auto" align="center">
+                    <img height="100px" src="lOGO/pltlogo.png" alt="">
+                </div>
+                <div class="col-lg-4 col-xl-4 p-0 pl-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h6>PLT YAZILIM BİLİŞİM TEKNOLOJİLERİ LTD.ŞTİ</h6>
+                        <p class="m-0" class="opacity-30">
+                            <i class="fa-solid fa-location-pin"></i> Alaaddinbey Mah. 646.Sk. No:11/E Nilüfer/BURSA <br>
+                            <i class="fa-solid fa-phone-flip"></i> +90 224 443 0943 <br>
+                            <i class="fa-solid fa-mobile-screen-button"></i> +90 553 943 0943 <br>
+                            <i class="fas fa-fw fa-envelope"></i> info@plt.net.tr <br><br>
+                        </p>
+                        <p class="hover"><a href="kvkk.html">- KVKK Aydınlatma Metni</a></p>
+                        <p class="hover"><a href="gizlilikpolitikasi.html">- Gizlilik Politikası</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-5 px-0 px-md-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="d-flex justify-content-center">
+                            <a class=" icon " href="#! "><i class="fa-brands fa-facebook-f "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-instagram "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-twitter "></i></a>
+                            <a class="icon " href="#! "><i class="fa-brands fa-pinterest-p "></i></a>
+                            <a class="icon " href="#! "><i class="fa-brands fa-linkedin-in "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-youtube "></i></a>
+                        </p>
+                        <br>
+                        <div class="text-center ">
+                            <h3>MÜŞTERİ HİZMETLERİ</h3>
+                            <h2>0224 443 0943</h2>
+                            <h6>HAFTA İÇİ 09:00 - 19:00 / CUMARTESİ 09:00 - 18:00</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col pt-4">
+                    <p>
+                        Tüm hakları saklıdır © 2015 PLT Bu site tanımlama bilgilerini kullanır, daha fazla bilgi için lütfen <a href="#!">Çerez politikamıza bakın.</a> Web Sitesi Tasarımı <a href="https://maxifi.com.tr" target="_blank">Maxifi Yazılım </a>                        tarafından Yapılmıştır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

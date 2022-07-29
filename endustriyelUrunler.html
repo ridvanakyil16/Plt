@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- MyStyle -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>PLT Teknoloji</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+         :root {
+            --dark-color: #303e48;
+            --light-color: #435461;
+            --red-color: #025DAA;
+            --grey-background-color: #E3E6E7;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Rubik", sans-serif;
+            border: 0;
+            outline: 0;
+        }
+        
+        .opacity-30 {
+            opacity: 0.7 !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: var(--grey-background-color)">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light pb-0">
+        <div class="container">
+            <a class="navbar-brand pb-3" href="index.html">
+                <img height="74px" src="lOGO/logo_mavi.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div style="position: absolute; top: 5px; right: 0;">
+                    <i style="color: var(--red-color);" class="fa-solid fa-play"></i>
+                    <div class="navbar-top">
+                        <a href="#!">Basında Biz &nbsp; | &nbsp;</a>
+                        <a href="#!">TR &nbsp; |</a>
+                        <a style="padding-right: 60px;" href="#!">Eng</a>
+                    </div>
+                </div>
+                <div style="width: 40%; height: 1px; background-color: #fff; position: absolute; top: 35px; right: 0;"></div>
+
+                <ul class="navbar-nav mx-auto mt-4 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kurumsal.html">Kurumsal</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="temsilciler.html">Temsilcilikler</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cozumler.html">Çözümler</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urunlerimiz.html">Ürünlerimiz</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kalite.html">Kalite</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br><br>
+
+    <div class="container-fluid bread-crumb">
+        <div class="container">
+            <div class="row">
+                <div class="col p-0 d-lg-flex justify-content-between align-items-center py-2 py-lg-3">
+                    <span>Endüstriyel Ürünler</span>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol style="margin: 0;" class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house"></i> &nbsp; Anasayfa</a></li>
+                            <li class="breadcrumb-item"><a href="urunlerimiz.html">Ürünler</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Endüstriyel Ürünler</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container urun-cards">
+        <div class="row">
+            <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Personel Devam Takip Cihazları(PDKS)</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Bulut Tabanlı Ortam İzleme, Denetleme ve Analiz Ürünleri</p><br>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img style="object-fit: cover;" src="images/endustriyelUrunler/enduktifyaklasımsensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Endüktif Yaklaşım Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/pulsotronicsensorler.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Pulsotronic Sensörler</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/enkoder.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Enkoder</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/akıskansensorler.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Akışkan Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/ataletsensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Atalet Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/endustriyelgoruntuisleme.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Endüstriyel Görüntü İşleme</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/gazanalizcihazlari.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Gaz Analiz Cihazları</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/fiberoptiksensorlervefiberoptikkablolar.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Fiber Optik Sensörler ve Fiber Optik Kablolar</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/fotoseller.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Fotoseller</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/guvenliksvicleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Güvenlik sviçleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/isikperdesi.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Işık Perdesi</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/kapasitifvemanyetiksensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Kapesitif ve Manyetik Yaklaşım Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/kontrastsensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Kontrast Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/manyetiksilindirsensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Manyetik Silindir Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/mesafeolcumsensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Mesafe Ölçüm Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/motor-feedbacksistemleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Motor-Feedback Sistemleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/optoelektronikguvenlikcihazlari.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Opto Elektronik Güvenlik Cihazları</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/otomotiktanimlamacozumleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Otamatik Tanımlama Cözümleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/parlaklıksensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Parlaklık Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/pattersensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Pattern Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/renksensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Renk Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/sens-control-guvenlikontrolcozumleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Sens:Control Güvenlik Ürünleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/sickappspace.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">SICK AppSpace</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/sickintegrationspace.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">SICK Integrationspace</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/temassizhareketsensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Temassız Hareket Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/tozolcumsensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Toz Ölçüm Cihazları</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/trafiksensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Trafik Sensörleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/yertespitivepozisyonlamacozumleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Yer Tespiti ve Pozisyonlama Çözümleri</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/catalsensorleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Çatal Sensörler</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1">
+                <div class="urun-card">
+                    <div class="img-wrapper">
+                        <img src="images/endustriyelUrunler/olcumvealgilamacozumleri.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="mb-5">Ölçüm ve Algılama Çözümleri</p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-top">
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="kurumsal.html">Kurumsal</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="temsilciler.html">Temsilcilikler</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="cozumler.html">Çözümler</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="kalite.html">Kalite</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row pt-4 pb-3">
+                <div class="col-lg-3 col-xl-3 my-auto" align="center">
+                    <img height="100px" src="lOGO/pltlogo.png" alt="">
+                </div>
+                <div class="col-lg-4 col-xl-4 p-0 pl-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h6>PLT YAZILIM BİLİŞİM TEKNOLOJİLERİ LTD.ŞTİ</h6>
+                        <p class="m-0" class="opacity-30">
+                            <i class="fa-solid fa-location-pin"></i> Alaaddinbey Mah. 646.Sk. No:11/E Nilüfer/BURSA <br>
+                            <i class="fa-solid fa-phone-flip"></i> +90 224 443 0943 <br>
+                            <i class="fa-solid fa-mobile-screen-button"></i> +90 553 943 0943 <br>
+                            <i class="fas fa-fw fa-envelope"></i> info@plt.net.tr <br><br>
+                        </p>
+                        <p class="hover"><a href="kvkk.html">- KVKK Aydınlatma Metni</a></p>
+                        <p class="hover"><a href="gizlilikpolitikasi.html">- Gizlilik Politikası</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-5 px-0 px-md-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="d-flex justify-content-center">
+                            <a class=" icon " href="#! "><i class="fa-brands fa-facebook-f "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-instagram "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-twitter "></i></a>
+                            <a class="icon " href="#! "><i class="fa-brands fa-pinterest-p "></i></a>
+                            <a class="icon " href="#! "><i class="fa-brands fa-linkedin-in "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-youtube "></i></a>
+                        </p>
+                        <br>
+                        <div class="text-center ">
+                            <h3>MÜŞTERİ HİZMETLERİ</h3>
+                            <h2>0224 443 0943</h2>
+                            <h6>HAFTA İÇİ 09:00 - 19:00 / CUMARTESİ 09:00 - 18:00</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col pt-4">
+                    <p>
+                        Tüm hakları saklıdır © 2015 PLT Bu site tanımlama bilgilerini kullanır, daha fazla bilgi için lütfen <a href="#!">Çerez politikamıza bakın.</a> Web Sitesi Tasarımı <a href="https://maxifi.com.tr" target="_blank">Maxifi Yazılım </a>                        tarafından Yapılmıştır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

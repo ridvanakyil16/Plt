@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- MyStyle -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>PLT Teknoloji</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+         :root {
+            --dark-color: #303e48;
+            --light-color: #435461;
+            --red-color: #025DAA;
+            --grey-background-color: #E3E6E7;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Rubik", sans-serif;
+            border: 0;
+            outline: 0;
+        }
+        
+        .opacity-30 {
+            opacity: 0.7 !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: var(--grey-background-color)">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light pb-0">
+        <div class="container">
+            <a class="navbar-brand pb-3" href="index.html">
+                <img height="74px" src="lOGO/logo_mavi.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div style="position: absolute; top: 5px; right: 0;">
+                    <i style="color: var(--red-color);" class="fa-solid fa-play"></i>
+                    <div class="navbar-top">
+                        <a href="#!">Basında Biz &nbsp; | &nbsp;</a>
+                        <a href="#!">TR &nbsp; |</a>
+                        <a style="padding-right: 60px;" href="#!">Eng</a>
+                    </div>
+                </div>
+                <div style="width: 40%; height: 1px; background-color: #fff; position: absolute; top: 35px; right: 0;"></div>
+
+                <ul class="navbar-nav mx-auto mt-4 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kurumsal.html">Kurumsal</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="temsilciler.html">Temsilcilikler</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cozumler.html">Çözümler</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urunlerimiz.html">Ürünlerimiz</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kalite.html">Kalite</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br><br>
+
+    <div class="container-fluid bread-crumb">
+        <div class="container">
+            <div class="row">
+                <div class="col p-0 d-lg-flex justify-content-between align-items-center py-2 py-lg-3">
+                    <span>Endüstriyel Kart Tasarım Çözümleri</span>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol style="margin: 0;" class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house"></i> &nbsp; Anasayfa</a></li>
+                            <li class="breadcrumb-item"><a href="cozumler.html">Çözümler</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Endüstriyel Kart Tasarım Çözümleri</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .tarayici-cozumleri {
+            max-width: 1200px !important;
+        }
+        
+        .tarayici-cozumleri .urun-card {
+            padding: 30px;
+            background-color: #fff;
+            font-family: "Titillium Web", sans-serif;
+            color: #1E1E1E;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .tarayici-cozumleri h4 {
+            color: #000;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .tarayici-cozumleri .div {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            max-width: 100%;
+            height: 2px;
+            background-color: rgb(111, 166, 212);
+        }
+        
+        .tarayici-cozumleri ul {
+            list-style: none;
+            margin-top: 10px;
+            margin-bottom: 1.3em;
+            padding: 0;
+        }
+        
+        .tarayici-cozumleri ul li {
+            padding: 7px 0 7px 0;
+            border-bottom: 1px;
+            border-bottom: 1px solid #ececec;
+        }
+        
+        .tarayici-cozumleri ul li i {
+            color: #82A263;
+            font-weight: bold;
+        }
+        
+        .tarayici-cozumleri a {
+            border-radius: 5px;
+            background-color: #36a9e1;
+            width: 100% !important;
+            display: block !important;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3 s ease;
+        }
+        
+        .tarayici-cozumleri a:hover {
+            background-color: var(--red-color);
+        }
+        
+        .tarayici-cozumleri .title {
+            min-height: 100px;
+        }
+        
+        .item-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <div class="container tarayici-cozumleri mb-5">
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <h3>ENDÜSTRİYEL KART TASARIM ÇÖZÜMLERİ</h3>
+                <p style="color: #1E1E1E">Ürünlerimizde en iyi kaliteyi ve yüksek standartları yakalamak için çeşitli kontrol ve üretim aşamalarından geçirerek sizlere ulaştırıyoruz.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <h4 class="title">GSM Tabanlı Uzaktan Erişimli 4'lü Priz</h4>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 1 Kanal Sıcaklık/Nem Sensörü</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 4 Adet Sayısal Giriş (Kapı, Yangın, Elektrik Kesintisi, UPS Alarmı İçin) 1 Ch Temperature / Humidity</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 4 Adet Kuru Kontak Çıkışlı Priz. Lamba, Siren, Klimayı Çalıştırma Veya Durdurma</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; GPRS TCP/IP/UDP Üzerinden Data Haberleşmesi</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 5 Farklı Numaraya SMS İle Bilgi Gönderme ve Çağrı Yapma</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Serbest Soğutmalı Soğutucular</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Dahili Gerçek Zaman Saati</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Micro-SD Flash Hafızaya 1 Dakika Ara İle Kayıt (MAX.32GB)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; RS232 Çıkış</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; GPS Bağlantı Girişi</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Push-Push SIM Cart Yuvası</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 90/180° SMA Anten Connektörü</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 9VDC Power Jack İnput</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; GSM Aktivitesine Bağlı Olarak 0.8-4 Watt Güç Tüketimi</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; GSM 850 MHz / DCS 1800MHz / EGSM 900 MHz / PCS 1900 MHz</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Alüminyum Gövde</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Ağırlık: ~ 330gr, Boyutlar: 112.5x103.0x77mm</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 7/24 Çalışma Garantili</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <br>
+                        <p> 4'lü GSM Prizler, bağlı elektrikli cihazların(televizyon, printer, bilgisayar, mönitör, çamaşır makinesi, vb.) uzaktan kontrol edilmesi ile enerji tüketimlerini sıfır seviyesine çekebilen GSM Tabanlı Uzaktan Erişimli Priz'lerdir.</p>
+                        <a href="#!">4'lÜ PRİZ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <h4 class="title">KGSM-IO GSM Tabanlı Kablosuz Ortam İzleme ve Alarm</h4>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 4 Adet Kuru Kontrol Röle Çıkış</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 4 Adet Kuru Kontak Giriş</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; MicroSD Kayıt</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 1 Adet Sıcaklık Nem Sensör Girişi</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Dahili Gerçek Zaman Saati</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; SMS İle Kontrol</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Şifre Kontrollü Operasyonlar</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Sensör Durumlarına Göre Çıkışları Çalıştırabilme, SMS Atabilme</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Duvar Veya Panoya Montaj Olanağı</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Boyutlar:112.5x103.0x29.5mm, Montaj Vidası Hariç</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Ağırlık: ~330gr</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Güç: 9watt Maksimum, 0,96Watt Minimum</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Renk: Gri(Alüminyum)</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <br>
+                        <p> KGSM-IO, GSM tabanlı Uzaktan Kontrol ve *Telemetry sistemidir. , KGSM-IO kablolu internet bağlantısının bulunmadığı veya hareketli noktalardan veri almak, gerektiğinde kontrol edebilmek için geliştirilmiş bir birimdir.</p>
+                        <a href="#!">KABLOSUZ ORTAM İZLEME</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <h4 class="title">Mobil Depo</h4>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper" style="text-transform: capitalize;">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Her Bir Raf Diğerlerinden Bağımsız Olup, harici bir PLC veya pano gerektirmez</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Ortalama 10 raf olan bir uygulamada gereken yüzlerce kablo yerine sadece 1 besleme kablosu kullanılır</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Raflar arasında, çarpışmasız akordiyon şeklinde hareket</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Forklift operatörünün kullanımı için endüstriyel kumanda</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Ethernet bağlantısı sayesinde fabrika içi ağ üzerinden veya kablosuz wifi üzerinden erişim. Depo yönetim yazılım desteği</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Raflar arasında kablosuz IR haberleşme</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Raflar arasında kablosuz RF (radyo frekans) haberleşme</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 4 adete kadar her raf için motor sürücü çıkışı</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Android yazılımı üzerinden kontrol(Kumanda olarak cep telefonuda kullanılabilir)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Gece modu</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Yetkilendirme desteği</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Kurulum sırasında raf numaralandırma ve sensörleri bilgisayardan kontrol ve ayar</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Raf başı büyük boy led bilgilendirme panosu</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Operasyon ve hata kayıtları (200.000 operasyon)</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <br>
+                        <p> Deponun kapasitesini arttırmaya olanak sağlayan, blok halinde koridor yönünde hareket edebilen bir çeşit depolama sistemidir. 2012 yılında patentini almış olduğumuz, Kızıl ötesi haberleşme ve/veya kablosuz haberleşme ile rafların
+                            birbirleri ile haberleşerek konumlarını ayarlayan elektronik sistemimiz, 4 yıldır 200 adetten fazla mobil depo uygulaması ile tüm saha tecrübeleri ile tümleşik bir üründür.</p>
+                        <a href="#!">MOBİL DEPO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <h4 class="title">Yeraltı Suları Denetim ve Sulama Kuyuları Yönetim / İzleme Sistemi</h4>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper" style="text-transform: capitalize;">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Akıllı kartlara ön yükleme ile sulama yapabilme ve yetkisiz kullanımı engelleme</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Merkezi sunucu üzerinden 120 adete kadar kuyunun online izleme, kontrol etme, raporlama(GPRS, EDGE)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Her bir sulama başına ve toplam elektrik tüketimleri</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Her bir sulama başına ve toplam m³ veya endex olarak verilen su miktarı</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Pompa, termik, kapı açılması, elektrik kesintisi, hareket algılama</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Hırsızlığa karşı yüksek sesli ikaz ve harekete duyarlı fotoğraf çekme ve kuyuyu kapatma</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Bünyesinde akıllı şarj sistemi ile elektrik kesintilerinde bile çalışma(akıllı şarj ile uzun ömür)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 7/24 Aktif çalışma, GSM şebekesine otomatik olarak yeniden bağlanma</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Yasal dayanak oluşturabilecek şekilde tüm işlemlerin bünyesindeki hafıza kaydı(saat + tarih)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Araziye düşen yağış miktarını günlük olarak tutma ve bu sayede gereksiz sulamadan kurtulma</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Aşırı rüzgârda sulamayı otomatik kapatma</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Arazide yangın veya duman tespitinde yetkilileri SMS ve çağrı ile uyarma</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <br>
+                        <p> WDMA yeraltı sularının denetimli olarak kullanımını sağlamak, hangi üreticimizin ne kadar sulama yapacağını kontrol etmek, sulama sırasında tüketilen elektrik enerjisi ve su miktarını ölçmek, akıllı kartlara yüklenen TL kadar sulama
+                            imkanı sağlamak, sulama kuyularının güvenliğini sağlama ile yapılandırılmış bir sistemdir.</p>
+                        <a href="#!">İZLEME SİSTEMİ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-3">
+                <div class="urun-card">
+                    <div class="w-100">
+                        <h4 class="title">CPO-EM1 Üretim Otomasyonu</h4>
+                        <div class="div"></div>
+                    </div>
+                    <ul class="item-wrapper" style="text-transform: capitalize;">
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Tüm işlemler online, ethernet çıkışlı TCP/IP Paket haberleşmesi</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Web Server desteği (Internet Explorer ile iş makineleri izlenebilir)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; PS2 Barcode Okuyucu bağlantısı</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Dahili gerçek zaman saati</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Barcode etiket printer bağlantısı(RS232)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Kullanıcı tanımlı menüler</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 40 adet kullanıcı tanımlı genel menü(her menü 8 satır, 20 kolon) Internet Explorer'dan CPO-EM1'e direk erişilerek tüm parametleri görebilme MRP-II, ERP yazılımlarına entegrasyon için Windows</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 1000'den fazla CPO-EM1 modülü aynı ağ üzerinde çalışabilir(VB, VC6, VC#, BC6, Delphi uygulama örnekleri)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Rotary Encoder(metre sayacı) bağlanabilme</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Direk Loadcell bağlantısı ile 6Kg-20Ton arasında ağırlık ölçebilme(seçimli)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Grafik LCD display(128x64), 29 adet tuşlu keypad.Numerik ve alfabetik veri giriş imkanı</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Fonksiyon tuşlarına görev atama</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; Gerçek zaman saati, 512KByte SRAM, 256KByte ROM</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; SD/MMC kayıt tutma(seçimli)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 6 adet dijital giriş/sayıcı girişi(+/-25V 1.5 KV EMI koruması(seçimli))</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 2 adet dijital giriş/sayıcı girişi(optik yalıtımlı-paylaşımlı), 2 adet 0-100C K tipi Thermocouple bağlantısı ile sıcaklık ölçümü(seçimli)</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; 2 adet 2KW kuru kontak röle çıkış</li>
+                        <li><i class="fa-solid fa-check"></i> &nbsp; İkinci RS232 genişleme yuvası(seçimli)</li>
+                    </ul>
+                    <div class="w-100">
+                        <div class="div"></div>
+                        <br>
+                        <p>CPO-EM1 modülü ethernet tabanlı, endüstriyel ortamlarda çalışabilecek şekilde, bakım, yazılım kurulumu, virüs gibi harici etmenlerden etkilenmeyecek şekilde tasarlanmış veri yönetim ve ölçüm birimleridir.</p>
+                        <a href="#!">ÜRETİM OTOMASYONU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-top">
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="kurumsal.html">Kurumsal</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="temsilciler.html">Temsilcilikler</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="cozumler.html">Çözümler</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="kalite.html">Kalite</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li>&nbsp; | &nbsp;</li>
+                        <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row pt-4 pb-3">
+                <div class="col-lg-3 col-xl-3 my-auto" align="center">
+                    <img height="100px" src="lOGO/pltlogo.png" alt="">
+                </div>
+                <div class="col-lg-4 col-xl-4 p-0 pl-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h6>PLT YAZILIM BİLİŞİM TEKNOLOJİLERİ LTD.ŞTİ</h6>
+                        <p class="m-0" class="opacity-30">
+                            <i class="fa-solid fa-location-pin"></i> Alaaddinbey Mah. 646.Sk. No:11/E Nilüfer/BURSA <br>
+                            <i class="fa-solid fa-phone-flip"></i> +90 224 443 0943 <br>
+                            <i class="fa-solid fa-mobile-screen-button"></i> +90 553 943 0943 <br>
+                            <i class="fas fa-fw fa-envelope"></i> info@plt.net.tr <br><br>
+                        </p>
+                        <p class="hover"><a href="kvkk.html">- KVKK Aydınlatma Metni</a></p>
+                        <p class="hover"><a href="gizlilikpolitikasi.html">- Gizlilik Politikası</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-5 px-0 px-md-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="d-flex justify-content-center">
+                            <a class=" icon " href="#! "><i class="fa-brands fa-facebook-f "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-instagram "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-twitter "></i></a>
+                            <a class="icon " href="#! "><i class="fa-brands fa-pinterest-p "></i></a>
+                            <a class="icon " href="#! "><i class="fa-brands fa-linkedin-in "></i></a>
+                            <a class="icon " href="#! "><i class="fab fa-youtube "></i></a>
+                        </p>
+                        <br>
+                        <div class="text-center ">
+                            <h3>MÜŞTERİ HİZMETLERİ</h3>
+                            <h2>0224 443 0943</h2>
+                            <h6>HAFTA İÇİ 09:00 - 19:00 / CUMARTESİ 09:00 - 18:00</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col pt-4">
+                    <p>
+                        Tüm hakları saklıdır © 2015 PLT Bu site tanımlama bilgilerini kullanır, daha fazla bilgi için lütfen <a href="#!">Çerez politikamıza bakın.</a> Web Sitesi Tasarımı <a href="https://maxifi.com.tr" target="_blank">Maxifi Yazılım </a>                        tarafından Yapılmıştır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

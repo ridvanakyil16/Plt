@@ -1,0 +1,877 @@
+/* =================================== GLOBAL SECTİON =================================== */
+
+
+/* BREAD CRUMB SECTİON START */
+
+.bread-crumb .container {
+    width: 65%;
+    padding: 16px 0;
+}
+
+.bread-crumb {
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+.bread-crumb span {
+    font-size: 28px;
+}
+
+.bread-crumb .container span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bread-crumb .container nav {
+    display: flex;
+    align-items: center;
+}
+
+.bread-crumb .container ol li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media(max-width:576px) {
+    .bread-crumb .container {
+        width: 85%;
+    }
+}
+
+
+/* BREAD CRUMB SECTİON END */
+
+
+/* =================================== GLOBAL SECTİON =================================== */
+
+
+/* =================================== NAVBAR SECTİON =================================== */
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .d-flex {
+    color: #fff;
+    opacity: 0.5
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+    font-weight: 300;
+}
+
+@media(max-width:992px) {
+    .navbar .nav-item {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .nav-item a {
+        padding: 0;
+    }
+    .navbar-nav {
+        margin-bottom: 35px;
+    }
+}
+
+.navbar-top {
+    display: inline;
+    background-color: var(--red-color);
+    padding: 10px;
+}
+
+.navbar-top a {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* =================================== NAVBAR SECTİON =================================== */
+
+
+/* =================================== CONTACT PAGE =================================== */
+
+
+/* SEARCH SECTİON START */
+
+.search.container {
+    width: 65%;
+    padding: 16px 0;
+}
+
+.search {
+    margin-top: -65px;
+}
+
+.search .input-group {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.search span {
+    padding: 24px;
+    border: 0;
+    background-color: #fff;
+}
+
+.search input {
+    padding: 24px;
+    border: 0;
+    border-right: 1px solid rgb(219, 219, 219);
+}
+
+.search .btn {
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #FEA569;
+    color: #fff;
+}
+
+@media(max-width:576px) {
+    .search.container {
+        width: 85%;
+    }
+    .search span {
+        padding: 10px 16px;
+    }
+    .search input {
+        padding: 10px 16px;
+        border: 0;
+    }
+    .search .btn {
+        display: none;
+    }
+}
+
+
+/* SEARCH SECTİON END */
+
+
+/* CONTACT SECTİON START */
+
+.contact.container {
+    width: 65%;
+    padding: 16px 0;
+}
+
+.contact .card-contact {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background-color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px !important;
+}
+
+.contact iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.contact .card-contact i {
+    font-size: 28px;
+}
+
+.contact span,
+.contact i {
+    color: var(--red-color);
+}
+
+.contact .form {
+    padding: 48px;
+}
+
+.contact .form .input {
+    width: 48%;
+    font-size: 14px;
+}
+
+.contact .form .input input {
+    padding: 10px 16px;
+}
+
+.contact .form .input-full {
+    width: 100%;
+    font-size: 14px;
+}
+
+.contact .form .input-full textarea {
+    padding: 10px 16px;
+    border-radius: 0.3125rem
+}
+
+.contact .form a {
+    color: #fff !important;
+    text-align: center !important;
+    background: var(--red-color) !important;
+    border: 1px solid transparent;
+    padding: 10px 22px;
+    font-size: .9375rem;
+    line-height: 1.5;
+    border-radius: .3125rem;
+    text-decoration: none;
+}
+
+@media(max-width:576px) {
+    .contact.container {
+        width: 85%;
+    }
+    .contact .form {
+        padding: 20px;
+    }
+    .contact .form .input {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
+/* CONTACT SECTİON END */
+
+
+/* =================================== CONTACT PAGE =================================== */
+
+
+/* =================================== KURUMSAL PAGE =================================== */
+
+
+/* KURUMSAL SECTİON START */
+
+.kurumsal {
+    color: var(--light-color);
+}
+
+.kurumsal img {
+    width: 100%;
+}
+
+.kurumsal .content h3 {
+    margin-bottom: 50px;
+    color: var(--dark-color);
+}
+
+.kurumsal .content a {
+    background-color: var(--red-color);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.4s ease;
+}
+
+.kurumsal .content a:hover {
+    box-shadow: none;
+}
+
+
+/* KURUMSAL SECTİON END */
+
+
+/* =================================== KURUMSAL PAGE =================================== */
+
+
+/* =================================== URUNLERİMİZ PAGE =================================== */
+
+
+/* COZUM CARDS SECTİON START */
+
+.urun-cards {
+    width: 65%;
+    padding: 20px 0;
+}
+
+.urun-cards .urun-card {
+    background-color: #fff;
+    transition: 0.5s;
+    border: 5px solid #fffd;
+    height: 100%;
+}
+
+.urun-cards .urun-card:hover {
+    border: 5px solid var(--red-color);
+}
+
+.urun-cards .urun-card .img-wrapper {
+    padding: 24px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.urun-cards .urun-card .img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.urun-cards .urun-card .content {
+    text-align: center;
+    padding: 24px;
+    height: 40%;
+}
+
+.urun-cards .urun-card .content a {
+    color: #fff !important;
+    font-weight: bold;
+    text-align: center !important;
+    background: var(--red-color) !important;
+    border: 1px solid transparent;
+    padding: .625rem 1.375rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+    border-radius: .3125rem;
+    text-decoration: none;
+}
+
+@media(max-width:1300px) {
+    .urun-cards {
+        width: 80%;
+        padding: 20px 0;
+    }
+}
+
+
+/* COZUM CARDS SECTİON END */
+
+
+/* =================================== URUNLERİMİZ PAGE =================================== */
+
+
+/* =================================== TEMSİLCİLER PAGE =================================== */
+
+
+/* TEMSİLCİLER SECTİON START */
+
+.temsilciler {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.temsilciler .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 20px 40px;
+}
+
+.temsilciler .gallery img {
+    transition: 1s;
+    width: 100%;
+    border-radius: 2px;
+    width: 350px;
+}
+
+.temsilciler .gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.temsilciler .belge {
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.temsilciler .belge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #000;
+    transition: all 0.4s;
+}
+
+.temsilciler .belge:hover img {
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+.temsilciler .img-wrapper {
+    padding: 33px 35px 28px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.temsilciler .img-wrapper:hover {
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.temsilciler .img-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* TEMSİLCİLER SECTİON END */
+
+
+/* =================================== TEMSİLCİLER PAGE =================================== */
+
+
+/* =================================== KALİTE PAGE =================================== */
+
+
+/* KALİTE SECTİON START */
+
+.kalite .img-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.kalite .img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    transition: all 0.4s ease;
+}
+
+.kalite .img-wrapper:hover img {
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+.kalite .content {
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.kalite .btn {
+    width: 260px;
+    height: 60px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    background-color: var(--red-color);
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 0;
+    font-size: 14px;
+}
+
+.kalite .btn.active {
+    color: grey;
+    background-color: #fff;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.kalite .btn .incontent {
+    position: absolute;
+    top: 200px;
+    right: 90%;
+    width: 250%;
+    visibility: hidden;
+    transition: all 0.4s ease-in;
+    background-color: rgb(252, 247, 247);
+    text-align: left;
+    padding: 30px;
+}
+
+.kalite .btn .incontent h5 {
+    color: var(--red-color);
+}
+
+.kalite .btn .incontent ul {
+    color: grey;
+}
+
+.kalite .btn.active .incontent {
+    top: 100px;
+    visibility: visible;
+    z-index: 10;
+}
+
+.accordion {
+    display: none;
+}
+
+.accordion .accordion-button {
+    background-color: var(--red-color);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media(max-width:1200px) {
+    .kalite .content {
+        max-width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .kalite .btn .incontent {
+        position: absolute;
+        left: 300px;
+        max-width: 70%;
+        width: 100%;
+    }
+}
+
+@media(max-width:992px) {
+    .kalite .content {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .my-accordion {
+        display: none;
+    }
+    .accordion {
+        display: block;
+    }
+}
+
+
+/* KALİTE SECTİON END */
+
+
+/* =================================== KALİTE PAGE =================================== */
+
+
+/* =================================== COZUMLER PAGE =================================== */
+
+
+/* COZUMLER SECTİON START */
+
+.cozum-cards {
+    width: 65%;
+    padding: 20px 0;
+}
+
+.cozum-cards .cozum-card {
+    background-color: #fff;
+    transition: 0.5s;
+    border: 5px solid #fffd;
+    position: relative;
+    height: 100%;
+}
+
+.cozum-cards .cozum-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.cozum-cards .cozum-card:hover {
+    border: 5px solid var(--red-color);
+}
+
+.cozum-cards .cozum-card .img-wrapper {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.cozum-cards .cozum-card .img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cozum-cards .cozum-card .content {
+    position: relative;
+    text-align: center;
+    padding: 24px;
+    z-index: 10;
+    color: #fff;
+}
+
+.cozum-cards .cozum-card .content p {
+    margin-bottom: 30px;
+}
+
+.cozum-cards .cozum-card .content a {
+    color: #fff !important;
+    font-weight: bold;
+    text-align: center !important;
+    background: var(--red-color) !important;
+    border: 1px solid transparent;
+    padding: .625rem 1.375rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+    border-radius: .3125rem;
+    text-decoration: none;
+}
+
+@media(max-width:1300px) {
+    .cozum-cards {
+        width: 80%;
+        padding: 20px 0;
+    }
+}
+
+
+/* COZUMLER SECTİON END */
+
+
+/* =================================== COZUMLER PAGE =================================== */
+
+
+/* =================================== BLOG PAGE =================================== */
+
+
+/* SWİPER SLİDER SECTİON START */
+
+.mySwiper {
+    width: 65%;
+    padding: 16px 0;
+    margin: 70px auto;
+}
+
+.mySwiper .swiper-slide {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.mySwiper .swiper-slide .content {
+    padding: 16px;
+    text-align: center;
+}
+
+.mySwiper img {
+    width: 100%;
+    max-height: 270px;
+    object-fit: cover;
+}
+
+.mySwiper .title {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    margin-top: 15px;
+}
+
+.mySwiper .content .btn {
+    color: #fff !important;
+    font-weight: bold;
+    background-color: var(--red-color);
+    border: 1px solid transparent;
+    padding: .625rem 1.375rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+    border-radius: .3125rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    opacity: 0;
+    transition: 0.3s ease-in;
+    border-radius: 50%;
+    border: 0.1px solid #bfbfbf;
+    background-color: var(--grey-background-color)
+}
+
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev {
+    margin: 0 5px;
+    opacity: 1;
+}
+
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+    font-size: 13px;
+    color: #111111;
+}
+
+@media(max-width:768px) {
+    .mySwiper {
+        width: 80%;
+        padding: 16px 0;
+        margin: auto;
+    }
+}
+
+
+/* SWİPER SLİDER SECTİON END */
+
+
+/* =================================== BLOG PAGE =================================== */
+
+
+/* =================================== FOOTER SECTİON =================================== */
+
+
+/* FOOTER TOP START */
+
+.footer-top {
+    background: var(--light-color);
+}
+
+.footer-top ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.footer-top ul li {
+    color: #fff;
+}
+
+.footer-top ul li:nth-child(2n) {
+    opacity: 0.5;
+}
+
+.footer-top ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: 300 !important;
+}
+
+.footer-top ul li a:hover {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* FOOTER TOP END */
+
+
+/* FOOTER START */
+
+.footer {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.footer .hover {
+    margin: 0;
+}
+
+.footer .hover a {
+    color: #fff !important;
+    font-weight: 100 !important;
+    text-decoration: none;
+    transition: 0.7s;
+    margin: 0;
+}
+
+.footer .hover a:hover {
+    margin-left: 10px;
+}
+
+.footer iframe {
+    width: 80%;
+    height: 80%;
+}
+
+.footer h6 {
+    color: #fff;
+}
+
+.footer p {
+    font-weight: 100 !important;
+}
+
+.footer .icon {
+    font-weight: bolder;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+    background-color: var(--red-color);
+    transition: 0.4s;
+}
+
+.footer .icon:hover {
+    color: var(--red-color);
+    background-color: #fff;
+}
+
+.footer .icon i {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer .title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+@media(max-width:450px) {
+    .footer .icon {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+    }
+}
+
+
+/* FOOTER END */
+
+
+/* FOOTER BOTTOM START */
+
+.footer-bottom {
+    background-color: var(--light-color);
+}
+
+.footer-bottom p {
+    color: #fff !important;
+    font-weight: 100 !important;
+    text-align: center !important;
+    font-size: .75rem !important;
+}
+
+.footer-bottom p a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+/* FOOTER TOP END */
+
+
+/* =================================== FOOTER SECTİON =================================== */
